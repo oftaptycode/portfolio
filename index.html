@@ -1,0 +1,565 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Barra Akmal - Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Symbols+Outlined" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav id="navbar" class="nav-dark">
+        <div class="nav-left">
+            <div class="nav-logo"></div>
+            <span class="nav-name">Barra Akmal</span>
+        </div>
+        <div class="nav-links" id="navLinks">
+            <a href="#" data-page="home" class="nav-link">Home</a>
+            <a href="#" data-page="about" class="nav-link">About</a>
+            <a href="#" data-page="grades" class="nav-link">Grades</a>
+            <a href="#" data-page="plans" class="nav-link">Plans</a>
+            <a href="#" data-page="achievements" class="nav-link">Achievements</a>
+            <a href="#" data-page="experience" class="nav-link">Experience</a>
+            <a href="#" data-page="coding" class="nav-link">Coding</a>
+            <a href="#" data-page="organization" class="nav-link">Organization</a>
+            <span class="material-symbols-outlined theme-toggle" id="themeToggleNav">dark_mode</span>
+        </div>
+        <span class="material-symbols-outlined hamburger" id="hamburger">menu</span>
+    </nav>
+
+    <!-- Page: Home -->
+    <section id="page-home" class="page active">
+        <div class="home-hero">
+            <div class="hero-circle"></div>
+            <h1 class="hero-name">Barra Akmal</h1>
+            <p class="hero-subtitle">Student | Future Engineer | Problem Solver</p>
+            <p class="hero-desc">A passionate learner exploring the intersection of technology, psychology, and design. Building the future one project at a time.</p>
+            <div class="hero-cta">
+                <a href="#" data-page="about" class="cta-btn">Learn More</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Page: About -->
+    <section id="page-about" class="page">
+        <div class="page-content">
+            <h1 class="page-title">About Me</h1>
+            <p class="page-subtitle">Get to know who I am and what drives me</p>
+            <div class="about-section">
+                <div class="about-text">
+                    <p>Hey there! I'm Barra Akmal, a high school student with a deep passion for technology, psychology, and making a positive impact on the world around me.</p>
+                    <p>From a young age, I've been fascinated by how things work — whether it's a computer program, a psychological theory, or a social problem that needs solving. This curiosity has driven me to explore diverse fields and develop a unique interdisciplinary perspective.</p>
+                    <p>When I'm not coding or studying psychology, you'll find me participating in student council debates, volunteering at community events, or contributing to the school's Computer Science Club as Vice President.</p>
+                    <p>My long-term goal is to become an engineer who combines technical expertise with a deep understanding of human behavior to create solutions that truly make a difference in people's lives.</p>
+                </div>
+                <div class="about-sidebar">
+                    <div class="about-info-card">
+                        <div class="about-info-row">
+                            <span class="about-info-label">Name</span>
+                            <span class="about-info-value">Barra Akmal</span>
+                        </div>
+                        <div class="about-info-row">
+                            <span class="about-info-label">Grade</span>
+                            <span class="about-info-value">Grade 11</span>
+                        </div>
+                        <div class="about-info-row">
+                            <span class="about-info-label">Interests</span>
+                            <span class="about-info-value">Technology, Psychology, Leadership</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Page: Grades -->
+    <section id="page-grades" class="page">
+        <div class="page-content">
+            <h1 class="page-title">Academic Journey</h1>
+            <p class="page-subtitle">My academic progress across semesters</p>
+
+            <div class="grade-tabs">
+                <button class="grade-tab active" data-grade="sem1">Semester 1</button>
+                <button class="grade-tab" data-grade="sem2">Semester 2</button>
+                <button class="grade-tab" data-grade="sem3">Semester 3</button>
+            </div>
+
+            <!-- Semester 1 -->
+            <div id="grade-sem1" class="grade-panel active">
+                <div class="grade-header">
+                    <h2>Semester 1 — Academic Results</h2>
+                </div>
+                <div class="grade-table">
+                    <div class="grade-row header-row">
+                        <div class="grade-cell">Subject</div>
+                        <div class="grade-cell">Score</div>
+                    </div>
+                    <div class="grade-row">
+                        <div class="grade-cell">Pendidikan Agama dan Budi Pekerti</div>
+                        <div class="grade-cell">96</div>
+                    </div>
+                    <div class="grade-row">
+                        <div class="grade-cell">Pendidikan Pancasila</div>
+                        <div class="grade-cell">92</div>
+                    </div>
+                    <div class="grade-row">
+                        <div class="grade-cell">Bahasa Indonesia</div>
+                        <div class="grade-cell">90</div>
+                    </div>
+                    <div class="grade-row">
+                        <div class="grade-cell">Matematika</div>
+                        <div class="grade-cell">90</div>
+                    </div>
+                    <div class="grade-row">
+                        <div class="grade-cell">Fisika</div>
+                        <div class="grade-cell">94</div>
+                    </div>
+                    <div class="grade-row">
+                        <div class="grade-cell">Kimia</div>
+                        <div class="grade-cell">94</div>
+                    </div>
+                    <div class="grade-row">
+                        <div class="grade-cell">Biologi</div>
+                        <div class="grade-cell">86</div>
+                    </div>
+                    <div class="grade-row">
+                        <div class="grade-cell">Sosiologi</div>
+                        <div class="grade-cell">87</div>
+                    </div>
+                    <div class="grade-row">
+                        <div class="grade-cell">Ekonomi</div>
+                        <div class="grade-cell">94</div>
+                    </div>
+                    <div class="grade-row">
+                        <div class="grade-cell">Geografi</div>
+                        <div class="grade-cell">87</div>
+                    </div>
+                    <div class="grade-row">
+                        <div class="grade-cell">Sejarah</div>
+                        <div class="grade-cell">84</div>
+                    </div>
+                    <div class="grade-row">
+                        <div class="grade-cell">Bahasa Inggris</div>
+                        <div class="grade-cell">94</div>
+                    </div>
+                    <div class="grade-row">
+                        <div class="grade-cell">Pendidikan Jasmani, Olahraga dan Kesehatan</div>
+                        <div class="grade-cell">95</div>
+                    </div>
+                    <div class="grade-row">
+                        <div class="grade-cell">Informatika</div>
+                        <div class="grade-cell">97</div>
+                    </div>
+                    <div class="grade-row">
+                        <div class="grade-cell">Seni</div>
+                        <div class="grade-cell">96</div>
+                    </div>
+                    <div class="grade-row">
+                        <div class="grade-cell">Tahsin dan Tahfidz Al Qur'an</div>
+                        <div class="grade-cell">96</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Semester 2 -->
+            <div id="grade-sem2" class="grade-panel">
+                <div class="grade-header">
+                    <h2>Semester 2 — Academic Results</h2>
+                </div>
+                <div class="grade-table">
+                    <div class="grade-row header-row">
+                        <div class="grade-cell">Subject</div>
+                        <div class="grade-cell">Score</div>
+                    </div>
+                    <div class="grade-row">
+                        <div class="grade-cell">Pendidikan Agama dan Budi Pekerti</div>
+                        <div class="grade-cell">96</div>
+                    </div>
+                    <div class="grade-row">
+                        <div class="grade-cell">Pendidikan Pancasila</div>
+                        <div class="grade-cell">92</div>
+                    </div>
+                    <div class="grade-row">
+                        <div class="grade-cell">Bahasa Indonesia</div>
+                        <div class="grade-cell">90</div>
+                    </div>
+                    <div class="grade-row">
+                        <div class="grade-cell">Matematika</div>
+                        <div class="grade-cell">90</div>
+                    </div>
+                    <div class="grade-row">
+                        <div class="grade-cell">Fisika</div>
+                        <div class="grade-cell">94</div>
+                    </div>
+                    <div class="grade-row">
+                        <div class="grade-cell">Kimia</div>
+                        <div class="grade-cell">94</div>
+                    </div>
+                    <div class="grade-row">
+                        <div class="grade-cell">Biologi</div>
+                        <div class="grade-cell">86</div>
+                    </div>
+                    <div class="grade-row">
+                        <div class="grade-cell">Sosiologi</div>
+                        <div class="grade-cell">87</div>
+                    </div>
+                    <div class="grade-row">
+                        <div class="grade-cell">Ekonomi</div>
+                        <div class="grade-cell">94</div>
+                    </div>
+                    <div class="grade-row">
+                        <div class="grade-cell">Geografi</div>
+                        <div class="grade-cell">87</div>
+                    </div>
+                    <div class="grade-row">
+                        <div class="grade-cell">Sejarah</div>
+                        <div class="grade-cell">84</div>
+                    </div>
+                    <div class="grade-row">
+                        <div class="grade-cell">Bahasa Inggris</div>
+                        <div class="grade-cell">94</div>
+                    </div>
+                    <div class="grade-row">
+                        <div class="grade-cell">Pendidikan Jasmani, Olahraga dan Kesehatan</div>
+                        <div class="grade-cell">95</div>
+                    </div>
+                    <div class="grade-row">
+                        <div class="grade-cell">Informatika</div>
+                        <div class="grade-cell">97</div>
+                    </div>
+                    <div class="grade-row">
+                        <div class="grade-cell">Seni</div>
+                        <div class="grade-cell">96</div>
+                    </div>
+                    <div class="grade-row">
+                        <div class="grade-cell">Tahsin dan Tahfidz Al Qur'an</div>
+                        <div class="grade-cell">96</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Semester 3 -->
+            <div id="grade-sem3" class="grade-panel">
+                <div class="grade-header">
+                    <h2>Semester 3 — Academic Results</h2>
+                </div>
+                <div class="grade-table">
+                    <div class="grade-row header-row">
+                        <div class="grade-cell">Subject</div>
+                        <div class="grade-cell">Score</div>
+                    </div>
+                    <div class="grade-row">
+                        <div class="grade-cell">Pendidikan Agama dan Budi Pekerti</div>
+                        <div class="grade-cell">94</div>
+                    </div>
+                    <div class="grade-row">
+                        <div class="grade-cell">Pendidikan Pancasila</div>
+                        <div class="grade-cell">90</div>
+                    </div>
+                    <div class="grade-row">
+                        <div class="grade-cell">Bahasa Indonesia</div>
+                        <div class="grade-cell">92</div>
+                    </div>
+                    <div class="grade-row">
+                        <div class="grade-cell">Matematika</div>
+                        <div class="grade-cell">94</div>
+                    </div>
+                    <div class="grade-row">
+                        <div class="grade-cell">Matematika Lanjutan</div>
+                        <div class="grade-cell">90</div>
+                    </div>
+                    <div class="grade-row">
+                        <div class="grade-cell">Fisika</div>
+                        <div class="grade-cell">93</div>
+                    </div>
+                    <div class="grade-row">
+                        <div class="grade-cell">Kimia</div>
+                        <div class="grade-cell">93</div>
+                    </div>
+                    <div class="grade-row">
+                        <div class="grade-cell">Biologi</div>
+                        <div class="grade-cell">86</div>
+                    </div>
+                    <div class="grade-row">
+                        <div class="grade-cell">Sejarah</div>
+                        <div class="grade-cell">89</div>
+                    </div>
+                    <div class="grade-row">
+                        <div class="grade-cell">Bahasa Inggris</div>
+                        <div class="grade-cell">94</div>
+                    </div>
+                    <div class="grade-row">
+                        <div class="grade-cell">Pendidikan Jasmani, Olahraga dan Kesehatan</div>
+                        <div class="grade-cell">96</div>
+                    </div>
+                    <div class="grade-row">
+                        <div class="grade-cell">Informatika</div>
+                        <div class="grade-cell">96</div>
+                    </div>
+                    <div class="grade-row">
+                        <div class="grade-cell">Seni</div>
+                        <div class="grade-cell">96</div>
+                    </div>
+                    <div class="grade-row">
+                        <div class="grade-cell">Tahsin dan Tahfidz Al Qur'an</div>
+                        <div class="grade-cell">94</div>
+                    </div>
+                    <div class="grade-row">
+                        <div class="grade-cell">Bahasa Arab</div>
+                        <div class="grade-cell">90</div>
+                    </div>
+                    <div class="grade-row">
+                        <div class="grade-cell">Bahasa Sunda</div>
+                        <div class="grade-cell">91</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Page: Future Plans -->
+    <section id="page-plans" class="page">
+        <div class="page-content">
+            <h1 class="page-title">Rencana Masa Depan</h1>
+            <p class="page-subtitle">Peta jalan akademik dan karier saya ke depannya</p>
+
+            <div class="plans-grid">
+                <div class="plan-card">
+                    <div class="plan-icon" style="background:#6366F1;">
+                        <span class="material-symbols-outlined">school</span>
+                    </div>
+                    <h3>Pendidikan Tinggi Luar Negeri</h3>
+                    <p>Setelah lulus SMA, saya bertekad melanjutkan studi ke luar negeri untuk mengejar gelar sarjana di bidang Teknik Elektro atau Teknik Mesin pada universitas kelas dunia, guna mendapatkan pemahaman mendalam tentang dasar-dasar teknologi masa depan.</p>
+                    <div class="plan-meta">Target: 2027 - 2031</div>
+                </div>
+
+                <div class="plan-card">
+                    <div class="plan-icon" style="background:#10B981;">
+                        <span class="material-symbols-outlined">engineering</span>
+                    </div>
+                    <h3>Karier — Insinyur Profesional</h3>
+                    <p>Bercita-cita menjadi seorang insinyur profesional yang memiliki integritas tinggi dan kemampuan untuk merancang solusi inovatif dalam bidang elektro atau mekanik yang berdampak bagi industri global.</p>
+                    <div class="plan-meta">Timeline: 2031+</div>
+                </div>
+
+                <div class="plan-card">
+                    <div class="plan-icon" style="background:#8B5CF6;">
+                        <span class="material-symbols-outlined">volunteer_activism</span>
+                    </div>
+                    <h3>Filantropi & Dampak Sosial</h3>
+                    <p>Memiliki ambisi jangka panjang untuk menggunakan keahlian teknik saya dalam menginisiasi berbagai proyek filantropi guna memberdayakan masyarakat marginal melalui inovasi teknologi yang berkelanjutan.</p>
+                    <div class="plan-meta">Tujuan berkelanjutan</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Page: Achievements -->
+    <section id="page-achievements" class="page">
+        <div class="page-content">
+            <h1 class="page-title">Achievements</h1>
+            <p class="page-subtitle">Awards and recognitions I'm proud of</p>
+
+            <div class="achievements-grid">
+                <div class="achievement-card">
+                    <div class="achievement-bar" style="background:#6366F1;"></div>
+                    <div class="achievement-content">
+                        <h3>Jabar Science Competition - Bahasa Inggris</h3>
+                        <p class="achievement-date">February 2026</p>
+                        <p>Berhasil meraih prestasi dalam kompetisi sains tahunan tingkat provinsi Jawa Barat pada kategori Bahasa Inggris tahun 2026.</p>
+                    </div>
+                </div>
+
+                <div class="achievement-card">
+                    <div class="achievement-bar" style="background:#10B981;"></div>
+                    <div class="achievement-content">
+                        <h3>OSN-K Informatika - Peserta</h3>
+                        <p class="achievement-date">2025</p>
+                        <p>Menjadi perwakilan resmi sekolah dalam kompetisi sains tingkat kabupaten/kota bidang informatika pada tahun 2025.</p>
+                    </div>
+                </div>
+
+                <div class="achievement-card">
+                    <div class="achievement-bar" style="background:#F59E0B;"></div>
+                    <div class="achievement-content">
+                        <h3>OSBANAS - Bahasa Inggris</h3>
+                        <p class="achievement-date">Januari 2026</p>
+                        <p>Berhasil meraih penghargaan dalam kategori Bahasa Inggris pada ajang OSBANAS tingkat nasional di awal tahun 2026.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Page: Experience -->
+    <section id="page-experience" class="page">
+        <div class="page-content">
+            <h1 class="page-title">Pengalaman</h1>
+            <p class="page-subtitle">Rangkaian kegiatan dan pengalaman organisasi saya selama di SMA</p>
+
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-line"></div>
+                    <div class="timeline-card">
+                        <div class="timeline-text">
+                            <p class="timeline-date">2025 - 2026</p>
+                            <h3>Program Penelitian Ilmiah (PROPIL)</h3>
+                            <p class="timeline-company">Peneliti</p>
+                            <p>EFEKTIVITAS KOMBINASI LILIN LEBAH (BEESWAX) DAN LILIN CARNAUBA (CARNAUBA WAX) BERBASIS NANOEMULSI SEBAGAI COATING TAHAN AIR UNTUK SEPATU BERBAHAN KANVAS.</p>
+                        </div>
+                        <a href="propil.jpeg" target="_blank" class="timeline-image-link">
+                            <div class="timeline-image-wrapper">
+                                <img src="propil.jpeg" alt="PROPIL - Dokumentasi">
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-line"></div>
+                    <div class="timeline-card">
+                        <div class="timeline-text">
+                            <p class="timeline-date">2025</p>
+                            <h3>Latihan Dasar Kepemimpinan (LDK) 1 & 2</h3>
+                            <p class="timeline-company">Peserta</p>
+                            <p>Mengikuti rangkaian pelatihan kepemimpinan intensif untuk mengembangkan kemampuan manajemen organisasi, kerja sama tim, dan kepemimpinan diri.</p>
+                        </div>
+                        <a href="ldk.png" target="_blank" class="timeline-image-link">
+                            <div class="timeline-image-wrapper">
+                                <img src="ldk.png" alt="LDK - Dokumentasi">
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-line"></div>
+                    <div class="timeline-card">
+                        <div class="timeline-text">
+                            <p class="timeline-date">2025</p>
+                            <h3>EXPERT — Kemah Pramuka Bantara</h3>
+                            <p class="timeline-company">Peserta - Pramuka</p>
+                            <p>Kegiatan perkemahan dalam rangka pelantikan Penegak Bantara untuk mengasah kedisiplinan, ketangkasan, dan tanggung jawab dalam kepramukaan.</p>
+                        </div>
+                        <a href="expert.png" target="_blank" class="timeline-image-link">
+                            <div class="timeline-image-wrapper">
+                                <img src="expert.png" alt="EXPERT - Dokumentasi">
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-card">
+                        <div class="timeline-text">
+                            <p class="timeline-date">2025</p>
+                            <h3>Goes to Campus (GTC) — ITB & UNPAD</h3>
+                            <p class="timeline-company">Peserta Kunjungan Akademik</p>
+                            <p>Kunjungan ke Institut Teknologi Bandung (ITB) dan Universitas Padjadjaran (UNPAD) untuk memperoleh wawasan tentang dunia perkuliahan dan orientasi program studi.</p>
+                        </div>
+                        <a href="gtc.png" target="_blank" class="timeline-image-link">
+                            <div class="timeline-image-wrapper">
+                                <img src="gtc.png" alt="GTC - Dokumentasi">
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Page: Coding -->
+    <section id="page-coding" class="page">
+        <div class="page-content">
+            <h1 class="page-title">Coding</h1>
+            <p class="page-subtitle">Repositori project pemrograman dan dokumentasi teknis saya</p>
+            
+            <div class="coding-grid">
+                <!-- Repository Card -->
+                <div class="coding-card">
+                    <div class="coding-icon-box">
+                        <span class="material-symbols-outlined">folder_open</span>
+                    </div>
+                    <h3>Informatika-kelas-11</h3>
+                    <p>Kumpulan project praktikum dan dokumentasi akademik informatika kelas 11. Mencakup implementasi algoritma, struktur data, dan berbagai solusi pemrograman terstruktur untuk kurikulum sekolah.</p>
+                    
+                    <div class="coding-tags">
+                        <span class="coding-tag">Algorithm</span>
+                        <span class="coding-tag">Informatics</span>
+                        <span class="coding-tag">Class 11</span>
+                    </div>
+
+                    <div class="coding-footer">
+                        <a href="https://github.com/oftaptycode/Informatika-kelas-11" target="_blank" class="github-link">
+                            <span class="material-symbols-outlined" style="font-size: 20px;">link</span>
+                            Lihat di GitHub
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Page: Organization -->
+    <section id="page-organization" class="page">
+        <div class="page-content">
+            <h1 class="page-title">Organization & Leadership</h1>
+            <p class="page-subtitle">Clubs and organizations I'm actively involved in</p>
+
+            <div class="org-cards">
+                <div class="org-card">
+                    <div class="org-icon" style="background:#6366F1;">
+                        <span class="material-symbols-outlined">code</span>
+                    </div>
+                    <div class="org-info">
+                        <h3>Computer Science Club</h3>
+                        <p class="org-role">Vice President</p>
+                        <p>Leading weekly coding workshops and organizing hackathons. Mentoring junior members in competitive programming and software development.</p>
+                    </div>
+                </div>
+
+                <div class="org-card">
+                    <div class="org-icon" style="background:#8B5CF6;">
+                        <span class="material-symbols-outlined">psychology</span>
+                    </div>
+                    <div class="org-info">
+                        <h3>Psychology Society</h3>
+                        <p class="org-role">Active Member</p>
+                        <p>Participating in research discussions, organizing guest lectures, and contributing to the annual psychology journal with peer-reviewed articles.</p>
+                    </div>
+                </div>
+
+                <div class="org-card">
+                    <div class="org-icon" style="background:#10B981;">
+                        <span class="material-symbols-outlined">volunteer_activism</span>
+                    </div>
+                    <div class="org-info">
+                        <h3>Student Council</h3>
+                        <p class="org-role">Class Representative</p>
+                        <p>Representing my class in school governance. Organizing community service events and coordinating with administration on student welfare initiatives.</p>
+                    </div>
+                </div>
+
+                <div class="org-card">
+                    <div class="org-icon" style="background:#F59E0B;">
+                        <span class="material-symbols-outlined">school</span>
+                    </div>
+                    <div class="org-info">
+                        <h3>Debate Society</h3>
+                        <p class="org-role">Member</p>
+                        <p>Participating in inter-school debate tournaments. Specializing in policy debates on education and technology.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
