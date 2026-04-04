@@ -1,29 +1,37 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="id">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Barra Akmal - Portfolio</title>
+    <title>Barra Akmal - Portofolio</title>
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/icon?family=Material+Symbols+Outlined" rel="stylesheet">
+    <script type="importmap">
+    {
+        "imports": {
+            "three": "https://cdn.jsdelivr.net/npm/three@0.166.1/build/three.module.js",
+            "three/addons/": "https://cdn.jsdelivr.net/npm/three@0.166.1/examples/jsm/"
+        }
+    }
+    </script>
 </head>
 <body>
     <!-- Navigation -->
-    <nav id="navbar" class="nav-dark">
+    <nav id="navbar">
         <div class="nav-left">
-            <div class="nav-logo"></div>
+            <!-- <div class="nav-logo"></div> -->
             <span class="nav-name">Barra Akmal</span>
         </div>
         <div class="nav-links" id="navLinks">
-            <a href="#" data-page="home" class="nav-link">Home</a>
-            <a href="#" data-page="about" class="nav-link">About</a>
-            <a href="#" data-page="grades" class="nav-link">Grades</a>
-            <a href="#" data-page="plans" class="nav-link">Plans</a>
-            <a href="#" data-page="achievements" class="nav-link">Achievements</a>
-            <a href="#" data-page="experience" class="nav-link">Experience</a>
+            <a href="#" data-page="home" class="nav-link">Beranda</a>
+            <a href="#" data-page="about" class="nav-link">Tentang</a>
+            <a href="#" data-page="grades" class="nav-link">Nilai</a>
+            <a href="#" data-page="plans" class="nav-link">Rencana</a>
+            <a href="#" data-page="achievements" class="nav-link">Prestasi</a>
+            <a href="#" data-page="experience" class="nav-link">Pengalaman</a>
             <a href="#" data-page="coding" class="nav-link">Coding</a>
-            <a href="#" data-page="organization" class="nav-link">Organization</a>
+            <a href="#" data-page="organization" class="nav-link">Organisasi</a>
             <span class="material-symbols-outlined theme-toggle" id="themeToggleNav">dark_mode</span>
         </div>
         <span class="material-symbols-outlined hamburger" id="hamburger">menu</span>
@@ -32,12 +40,16 @@
     <!-- Page: Home -->
     <section id="page-home" class="page active">
         <div class="home-hero">
-            <div class="hero-circle"></div>
-            <h1 class="hero-name">Barra Akmal</h1>
-            <p class="hero-subtitle">Student | Future Engineer | Problem Solver</p>
-            <p class="hero-desc">A passionate learner exploring the intersection of technology, psychology, and design. Building the future one project at a time.</p>
-            <div class="hero-cta">
-                <a href="#" data-page="about" class="cta-btn">Learn More</a>
+            <div id="particle-container"></div>
+            <div class="glow-overlay"></div>
+            <div class="hero-content">
+                <div class="hero-circle"></div>
+                <h1 class="hero-name">Barra Akmal</h1>
+                <p class="hero-subtitle">Pelajar | Calon Insinyur | Pemecah Masalah</p>
+                <p class="hero-desc">Seorang pelajar yang bersemangat menjelajahi perpaduan teknologi, psikologi, dan desain. Membangun masa depan satu proyek setiap saat.</p>
+                <div class="hero-cta">
+                    <a href="#" data-page="about" class="cta-btn">Pelajari Lebih</a>
+                </div>
             </div>
         </div>
     </section>
@@ -45,29 +57,27 @@
     <!-- Page: About -->
     <section id="page-about" class="page">
         <div class="page-content">
-            <h1 class="page-title">About Me</h1>
-            <p class="page-subtitle">Get to know who I am and what drives me</p>
+            <h1 class="page-title">Tentang Saya</h1>
+            <p class="page-subtitle">Kenali siapa saya dan apa yang mendorong saya</p>
             <div class="about-section">
                 <div class="about-text">
-                    <p>Hey there! I'm Barra Akmal, a high school student with a deep passion for technology, psychology, and making a positive impact on the world around me.</p>
-                    <p>From a young age, I've been fascinated by how things work — whether it's a computer program, a psychological theory, or a social problem that needs solving. This curiosity has driven me to explore diverse fields and develop a unique interdisciplinary perspective.</p>
-                    <p>When I'm not coding or studying psychology, you'll find me participating in student council debates, volunteering at community events, or contributing to the school's Computer Science Club as Vice President.</p>
-                    <p>My long-term goal is to become an engineer who combines technical expertise with a deep understanding of human behavior to create solutions that truly make a difference in people's lives.</p>
+                    <p>Halo! Saya Barra Akmal, seorang siswa SMA yang memiliki semangat mendalam terhadap teknologi, psikologi, dan memberi dampak positif bagi dunia di sekitar saya.</p>
+                    <p>Sejak kecil, saya selalu terpesona oleh cara kerja berbagai hal — baik itu program komputer, teori psikologi, maupun masalah sosial yang membutuhkan solusi. Rasa ingin tahu ini mendorong saya untuk mengeksplorasi berbagai bidang dan mengembangkan perspektif interdisipliner yang unik.</p>
+                    <p>Ketika tidak sedang menulis kode atau belajar psikologi, Anda bisa menemukan saya berpartisipasi dalam debat OSIS, menjadi relawan di acara komunitas, atau berkontribusi di Computer Science Club sekolah sebagai Wakil Ketua.</p>
+                    <p>Tujuan jangka panjang saya adalah menjadi seorang insinyur yang memadukan keahlian teknis dengan pemahaman mendalam tentang perilaku manusia untuk menciptakan solusi yang benar-benar membuat perbedaan dalam kehidupan masyarakat.</p>
                 </div>
-                <div class="about-sidebar">
-                    <div class="about-info-card">
-                        <div class="about-info-row">
-                            <span class="about-info-label">Name</span>
-                            <span class="about-info-value">Barra Akmal</span>
-                        </div>
-                        <div class="about-info-row">
-                            <span class="about-info-label">Grade</span>
-                            <span class="about-info-value">Grade 11</span>
-                        </div>
-                        <div class="about-info-row">
-                            <span class="about-info-label">Interests</span>
-                            <span class="about-info-value">Technology, Psychology, Leadership</span>
-                        </div>
+                <div class="about-info-card">
+                    <div class="about-info-row">
+                        <span class="about-info-label">Nama</span>
+                        <span class="about-info-value">Barra Akmal</span>
+                    </div>
+                    <div class="about-info-row">
+                        <span class="about-info-label">Kelas</span>
+                        <span class="about-info-value">Kelas 11</span>
+                    </div>
+                    <div class="about-info-row">
+                        <span class="about-info-label">Minat</span>
+                        <span class="about-info-value">Teknologi, Psikologi, Kepemimpinan</span>
                     </div>
                 </div>
             </div>
@@ -77,8 +87,8 @@
     <!-- Page: Grades -->
     <section id="page-grades" class="page">
         <div class="page-content">
-            <h1 class="page-title">Academic Journey</h1>
-            <p class="page-subtitle">My academic progress across semesters</p>
+            <h1 class="page-title">Perjalanan Akademik</h1>
+            <p class="page-subtitle">Kemajuan akademik saya lintas semester</p>
 
             <div class="grade-tabs">
                 <button class="grade-tab active" data-grade="sem1">Semester 1</button>
@@ -89,12 +99,12 @@
             <!-- Semester 1 -->
             <div id="grade-sem1" class="grade-panel active">
                 <div class="grade-header">
-                    <h2>Semester 1 — Academic Results</h2>
+                    <h2>Semester 1 — Hasil Akademik</h2>
                 </div>
                 <div class="grade-table">
                     <div class="grade-row header-row">
-                        <div class="grade-cell">Subject</div>
-                        <div class="grade-cell">Score</div>
+                        <div class="grade-cell">Mata Pelajaran</div>
+                        <div class="grade-cell">Nilai</div>
                     </div>
                     <div class="grade-row">
                         <div class="grade-cell">Pendidikan Agama dan Budi Pekerti</div>
@@ -166,12 +176,12 @@
             <!-- Semester 2 -->
             <div id="grade-sem2" class="grade-panel">
                 <div class="grade-header">
-                    <h2>Semester 2 — Academic Results</h2>
+                    <h2>Semester 2 — Hasil Akademik</h2>
                 </div>
                 <div class="grade-table">
                     <div class="grade-row header-row">
-                        <div class="grade-cell">Subject</div>
-                        <div class="grade-cell">Score</div>
+                        <div class="grade-cell">Mata Pelajaran</div>
+                        <div class="grade-cell">Nilai</div>
                     </div>
                     <div class="grade-row">
                         <div class="grade-cell">Pendidikan Agama dan Budi Pekerti</div>
@@ -243,12 +253,12 @@
             <!-- Semester 3 -->
             <div id="grade-sem3" class="grade-panel">
                 <div class="grade-header">
-                    <h2>Semester 3 — Academic Results</h2>
+                    <h2>Semester 3 — Hasil Akademik</h2>
                 </div>
                 <div class="grade-table">
                     <div class="grade-row header-row">
-                        <div class="grade-cell">Subject</div>
-                        <div class="grade-cell">Score</div>
+                        <div class="grade-cell">Mata Pelajaran</div>
+                        <div class="grade-cell">Nilai</div>
                     </div>
                     <div class="grade-row">
                         <div class="grade-cell">Pendidikan Agama dan Budi Pekerti</div>
@@ -359,15 +369,15 @@
     <!-- Page: Achievements -->
     <section id="page-achievements" class="page">
         <div class="page-content">
-            <h1 class="page-title">Achievements</h1>
-            <p class="page-subtitle">Awards and recognitions I'm proud of</p>
+            <h1 class="page-title">Prestasi</h1>
+            <p class="page-subtitle">Penghargaan dan pencapaian yang saya banggakan</p>
 
             <div class="achievements-grid">
                 <div class="achievement-card">
                     <div class="achievement-bar" style="background:#6366F1;"></div>
                     <div class="achievement-content">
                         <h3>Jabar Science Competition - Bahasa Inggris</h3>
-                        <p class="achievement-date">February 2026</p>
+                        <p class="achievement-date">Februari 2026</p>
                         <p>Berhasil meraih prestasi dalam kompetisi sains tahunan tingkat provinsi Jawa Barat pada kategori Bahasa Inggris tahun 2026.</p>
                     </div>
                 </div>
@@ -490,9 +500,9 @@
                     <p>Kumpulan project praktikum dan dokumentasi akademik informatika kelas 11. Mencakup implementasi algoritma, struktur data, dan berbagai solusi pemrograman terstruktur untuk kurikulum sekolah.</p>
                     
                     <div class="coding-tags">
-                        <span class="coding-tag">Algorithm</span>
-                        <span class="coding-tag">Informatics</span>
-                        <span class="coding-tag">Class 11</span>
+                        <span class="coding-tag">Algoritma</span>
+                        <span class="coding-tag">Informatika</span>
+                        <span class="coding-tag">Kelas 11</span>
                     </div>
 
                     <div class="coding-footer">
@@ -509,8 +519,8 @@
     <!-- Page: Organization -->
     <section id="page-organization" class="page">
         <div class="page-content">
-            <h1 class="page-title">Organization & Leadership</h1>
-            <p class="page-subtitle">Clubs and organizations I'm actively involved in</p>
+            <h1 class="page-title">Organisasi &amp; Kepemimpinan</h1>
+            <p class="page-subtitle">Klub dan organisasi yang aktif saya ikuti</p>
 
             <div class="org-cards">
                 <div class="org-card">
@@ -519,8 +529,8 @@
                     </div>
                     <div class="org-info">
                         <h3>Computer Science Club</h3>
-                        <p class="org-role">Vice President</p>
-                        <p>Leading weekly coding workshops and organizing hackathons. Mentoring junior members in competitive programming and software development.</p>
+                        <p class="org-role">Wakil Ketua</p>
+                        <p>Memimpin workshop coding mingguan dan mengorganisir hackathon. Membimbing anggota junior dalam competitive programming dan pengembangan perangkat lunak.</p>
                     </div>
                 </div>
 
@@ -529,9 +539,9 @@
                         <span class="material-symbols-outlined">psychology</span>
                     </div>
                     <div class="org-info">
-                        <h3>Psychology Society</h3>
-                        <p class="org-role">Active Member</p>
-                        <p>Participating in research discussions, organizing guest lectures, and contributing to the annual psychology journal with peer-reviewed articles.</p>
+                        <h3>Komunitas Psikologi</h3>
+                        <p class="org-role">Anggota Aktif</p>
+                        <p>Berpartisipasi dalam diskusi penelitian, mengorganisir kuliah tamu, dan berkontribusi pada jurnal psikologi tahunan dengan artikel yang telah melalui peer-review.</p>
                     </div>
                 </div>
 
@@ -540,9 +550,9 @@
                         <span class="material-symbols-outlined">volunteer_activism</span>
                     </div>
                     <div class="org-info">
-                        <h3>Student Council</h3>
-                        <p class="org-role">Class Representative</p>
-                        <p>Representing my class in school governance. Organizing community service events and coordinating with administration on student welfare initiatives.</p>
+                        <h3>OSIS</h3>
+                        <p class="org-role">Perwakilan Kelas</p>
+                        <p>Mewakili kelas saya dalam tata kelola sekolah. Mengorganisir kegiatan pengabdian masyarakat dan berkoordinasi dengan pihak administrasi terkait inisiatif kesejahteraan siswa.</p>
                     </div>
                 </div>
 
@@ -551,9 +561,9 @@
                         <span class="material-symbols-outlined">school</span>
                     </div>
                     <div class="org-info">
-                        <h3>Debate Society</h3>
-                        <p class="org-role">Member</p>
-                        <p>Participating in inter-school debate tournaments. Specializing in policy debates on education and technology.</p>
+                        <h3>Klub Debat</h3>
+                        <p class="org-role">Anggota</p>
+                        <p>Berpartisipasi dalam turnamen debat antar sekolah. Spesialisasi dalam debat kebijakan bidang pendidikan dan teknologi.</p>
                     </div>
                 </div>
             </div>
@@ -561,5 +571,6 @@
     </section>
 
     <script src="script.js"></script>
+    <script type="module" src="particles.js"></script>
 </body>
 </html>
